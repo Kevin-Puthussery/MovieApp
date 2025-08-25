@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { LuPhone } from "react-icons/lu";
 const Footer = () => {
     return (
         <div className="relative">
@@ -7,20 +7,23 @@ const Footer = () => {
             <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
 
             <footer className="relative z-10 bg-[url('/Footer4.jpg')] bg-cover bg-center bg-gray-200 text-gray-300 py-10 px-6 md:px-20">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 ">
 
                     {/* Logo and Description */}
-                    <div>
+                    <div className='flex justify-center'>
                         <div className='m-2'>
                             <img src="/star.png" alt="no-image" srcSet="" style={{ width: "200px", height: "150px" }} />
                         </div>
+                       
                     </div>
 
                     {/* Navigation Links */}
-                    <div className="grid grid-cols-2 gap-4">
-                        <div className='text-gray-100'>
-                            <h3 className="text-2xl font-semibold text-white-900 mb-2">Explore</h3>
-                            <ul className="space-y-2 text-sm ">
+                    
+                    <div className="grid grid-cols-2 gap-4 ">
+                        
+                        <div className='text-white-100'>
+                            <h3 className="text-3xl font-semibold text-white-900 mb-2 ">Explore</h3>
+                            <ul className="space-y-2 text-lg ">
                                 <li><a href="#" className="hover:text-green-400">Contact Us</a></li>
                                 <li><a href="#" className="hover:text-green-400">Terms of Service</a></li>
                                 <li><a href="#" className="hover:text-green-400">FAQ</a></li>
@@ -28,9 +31,9 @@ const Footer = () => {
                                 <li><a href="#" className="hover:text-green-400">Privacy Policy</a></li>
                             </ul>
                         </div>
-                        <div className='text-gray-100'>
-                            <h3 className="text-2xl font-semibold text-white mb-2">Highlights</h3>
-                            <ul className="space-y-2 text-sm">
+                        <div className='text-white-100'>
+                            <h3 className="text-3xl font-semibold text-white mb-2">Highlights</h3>
+                            <ul className="space-y-2 text-lg">
                                 <li><a href="#" className="hover:text-green-400">You Must Watch</a></li>
                                 <li><a href="#" className="hover:text-green-400">Recent Release</a></li>
                                 <li><a href="#" className="hover:text-green-400">Top IMDB</a></li>
@@ -40,16 +43,16 @@ const Footer = () => {
 
                     {/* Newsletter */}
                     <div>
-                        <h3 className="text-2xl font-semibold text-white mb-4">Stay Connected</h3>
+                        <h3 className="text-3xl font-semibold text-white mb-4 ">Stay Connected</h3>
                         <form className="flex flex-col space-y-3">
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="px-4 py-2 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                className="px-4 py-2 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-600"
                             />
                             <button
                                 type="submit"
-                                className="bg-cyan-700 hover:bg-zinc-500 text-white px-4 py-2 rounded"
+                                className="bg-cyan-700 hover:bg-green-800 text-white px-4 py-2 rounded"
                             >
                                 Subscribe
                             </button>
