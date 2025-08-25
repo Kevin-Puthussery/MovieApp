@@ -1,19 +1,19 @@
 import React from 'react'
 import { FaEye, FaHeart, FaStar, FaCommentAlt, FaPlus } from "react-icons/fa";
 import Header from '../../common/components/Header';
-
+import Footer from '../../common/components/Footer';
 
 function MoviePage() {
-   
-            
-const bars = Array.from({ length: 10 }, (_, i) => ({
+
+
+  const bars = Array.from({ length: 10 }, (_, i) => ({
     value: i + 1,
     height: Math.floor(Math.random() * 10) + 1, // 1 - 10
   }));
 
   return (
     <>
-    <Header/>
+      <Header />
       <div className="min-h-screen bg-slate-950 text-slate-100 p-4 md:p-6">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row items-start md:space-x-6">
@@ -172,11 +172,11 @@ const bars = Array.from({ length: 10 }, (_, i) => ({
 
 
 
-  
+      <Footer />
 
 
-        </>
-    )
+    </>
+  )
 }
 
 export default MoviePage
