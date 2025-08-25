@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="relative">
             {/* Overlay for background image opacity */}
-            <div className="absolute inset-0 bg-black opacity-90 z-0"></div>
+            <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
 
             <footer className="relative z-10 bg-[url('/Footer4.jpg')] bg-cover bg-center bg-gray-200 text-gray-300 py-10 px-6 md:px-20">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -12,14 +12,14 @@ const Footer = () => {
                     {/* Logo and Description */}
                     <div>
                         <div className='m-2'>
-                            <img src="https://img.freepik.com/premium-vector/movie-star-logo-design-vector-illustration_685330-3231.jpg?w=2000" alt="no-image" srcSet="" style={{ width: "200px", height: "150px" }} />
+                            <img src="/star.png" alt="no-image" srcSet="" style={{ width: "200px", height: "150px" }} />
                         </div>
                     </div>
 
                     {/* Navigation Links */}
                     <div className="grid grid-cols-2 gap-4">
-                        <div className='text-white'>
-                            <h3 className="text-2xl font-semibold text-white mb-2">Explore</h3>
+                        <div className='text-gray-100'>
+                            <h3 className="text-2xl font-semibold text-white-900 mb-2">Explore</h3>
                             <ul className="space-y-2 text-sm ">
                                 <li><a href="#" className="hover:text-green-400">Contact Us</a></li>
                                 <li><a href="#" className="hover:text-green-400">Terms of Service</a></li>
@@ -28,7 +28,7 @@ const Footer = () => {
                                 <li><a href="#" className="hover:text-green-400">Privacy Policy</a></li>
                             </ul>
                         </div>
-                        <div className='text-white'>
+                        <div className='text-gray-100'>
                             <h3 className="text-2xl font-semibold text-white mb-2">Highlights</h3>
                             <ul className="space-y-2 text-sm">
                                 <li><a href="#" className="hover:text-green-400">You Must Watch</a></li>
@@ -45,7 +45,7 @@ const Footer = () => {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                className="px-4 py-2 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
                             />
                             <button
                                 type="submit"
@@ -58,7 +58,7 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="mt-10 border-t border-red-800 pt-6 text-center text-sm text-gray-200">
+                <div className="mt-10 border-t border-red-700 pt-6 text-center text-sm text-gray-200">
                     Copyright @2025 All rights Reserved | The website is made with by Movie review
                 </div>
             </footer>
