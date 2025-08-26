@@ -1,5 +1,5 @@
 import React from 'react';
-import { LuPhone } from "react-icons/lu";
+
 const Footer = () => {
     return (
         <div className="relative">
@@ -14,13 +14,13 @@ const Footer = () => {
                         <div className='m-2'>
                             <img src="/star.png" alt="no-image" srcSet="" style={{ width: "200px", height: "150px" }} />
                         </div>
-                       
+
                     </div>
 
                     {/* Navigation Links */}
-                    
+
                     <div className="grid grid-cols-2 gap-4 ">
-                        
+
                         <div className='text-white-100'>
                             <h3 className="text-3xl font-semibold text-white-900 mb-2 ">Explore</h3>
                             <ul className="space-y-2 text-lg ">
